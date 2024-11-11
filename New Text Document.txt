@@ -1,0 +1,10 @@
+pipeline logic -
+start_date = @formatDateTime(adddays(utcNow(),-1),'yyyy-mm-dd')
+end_date = @formatDateTime(utcNow(),'yyyy-mm-dd')
+
+type = String
+
+
+
+error -
+select environment = earthquake env before running py spark files
